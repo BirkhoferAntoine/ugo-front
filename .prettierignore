@@ -1,0 +1,9 @@
+*.rc
+*.json
+*.cjs
+/functions
+/dist
+src/dev
+/src/assets
+.github
+/node_modules
