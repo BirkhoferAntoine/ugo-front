@@ -6,11 +6,11 @@ import {
     TableContainer,
     TableHead,
     TableRow,
-    Paper,
     Button,
 } from '@mui/material';
-import { Customer, CustomerListProps } from '../../types/types.ts';
-import { useData } from '../../contexts/data.context.tsx';
+import { Customer, CustomerListProps } from '../../../types/types.ts';
+import { useData } from '../../../contexts/data.context.tsx';
+import { sxStyles } from './CustomerList.styles.ts';
 
 export const CustomerList: React.FC<CustomerListProps> = ({
     handleSwitchTabs,
@@ -31,7 +31,7 @@ export const CustomerList: React.FC<CustomerListProps> = ({
     }
 
     return (
-        <TableContainer component={Paper}>
+        <TableContainer sx={sxStyles.container}>
             <Table>
                 <TableHead>
                     <TableRow>

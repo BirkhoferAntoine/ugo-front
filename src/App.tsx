@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { DefaultLayout } from './components/layout/DefaultLayout.tsx';
 import { NotFound } from './components/pages/NotFound.tsx';
-import { Homepage } from './components/pages/Homepage.tsx';
+import { Homepage } from './components/pages/Homepage/Homepage.tsx';
 import { DataProvider } from './contexts/data.context.tsx';
 
 function App() {

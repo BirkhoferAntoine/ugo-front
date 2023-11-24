@@ -1,3 +1,9 @@
+import { SxProps, Theme } from '@mui/material/styles';
+
+export type SxStylesObject = {
+    [key: string]: SxProps<Theme>; // This allows any string as a key, and the value must be a valid MUI sx prop type
+};
+
 export type Customer = {
     id: number;
     title: string;
@@ -9,7 +15,7 @@ export type Customer = {
 };
 
 export type Order = {
-    lastname: string;
+    customerLastname: string;
     id: number;
     product_id: number;
     quantity: number;
@@ -29,8 +35,10 @@ export type ContextType = {
 
 export type CustomerListProps = {
     handleSwitchTabs: (component: 'list' | 'orders' | null) => void;
+    //ref: React.RefObject<HTMLElement>;
 };
 
 export type CustomerOrdersProps = {
     handleSwitchTabs: (component: 'list' | 'orders' | null) => void;
+    //ref: React.RefObject<HTMLElement>;
 };

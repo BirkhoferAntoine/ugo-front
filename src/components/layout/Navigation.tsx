@@ -3,8 +3,12 @@ import { AppBar, Toolbar } from '@mui/material';
 
 export const Navigation: React.FC = () => {
     const sxStyles = {
-        header: {},
-        toolbar: {},
+        header: {
+            display: 'none',
+        },
+        toolbar: {
+            display: 'none',
+        },
     };
 
     return (
